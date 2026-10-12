@@ -12,7 +12,7 @@ cd /home/ec2-user
 git clone https://github.com/mokridevops/roboshop-ansible-roles_v3.git
 cd roboshop-ansible-roles_v3
 git pull
-#ansible-playbook -e component=$component -e env=$environment roboshop.yaml
-ansible-playbook -e component=$component -e env=$environment \
-  --vault-password-file /home/ec2-user/roboshop-ansible-roles_v3/.vault_pass \
-  roboshop.yaml
+ansible-playbook -e component=$component -e env=$environment roboshop.yaml
+#ansible-playbook -e component=$component -e env=$environment \
+#  --vault-password-file /home/ec2-user/roboshop-ansible-roles_v3/.vault_pass \
+#  roboshop.yaml
