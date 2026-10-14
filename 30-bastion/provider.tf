@@ -11,7 +11,7 @@ terraform {
 
   backend "s3" {
     bucket         = "remote-state-vpc-mokri" # Matches bucket name above
-    key            = "roboshop-databases.tfstate" # File path inside bucket
+    key            = "roboshop-bastion_1.tfstate" # File path inside bucket
     region         = "us-east-1"
     encrypt        = true          # Ensures encryption on upload
     use_lockfile   = true          # Enables native S3 state locking (Terraform 1.10+)
